@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel='stylesheet' href="/css/dn_dki.css">
+    <style>
+      .body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+
+      .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 50px auto;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-info {
+        flex: 1;
+        padding: 30px;
+      }
+
+      .contact-info h1 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .contact-info ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .contact-info ul li {
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #666;
+      }
+
+      .contact-info ul li span {
+        margin-right: 10px;
+      }
+
+      .contact-form h2 {
+        font-size: 20px;
+        color: #333;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .contact-form textarea {
+        height: 100px;
+        resize: vertical;
+      }
+
+      .contact-form button {
+        background-color: #d32f2f;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .contact-form button:hover {
+        background-color: #b71c1c;
+      }
+
+      .map-section {
+        flex: 1;
+        height: 500px;
+      }
+
+      .map-section iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .map-section {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__topbar">        
+          <div class="header__topbar__item">
+              <a href="/tintuc.html">Tin tức</a>
+          </div>
+          <div class="header__topbar__item">
+              <a href="/lienhe.html">Liên hệ</a>
+          </div>
+      </div>
+      <div class="header__mid">
+          <div class="header__logo">
+              <a href="/trangchu.html">
+                  <img src="/image/logo.png" alt="Logo cửa hàng đồ chơi">
+              </a>
+          </div>
+          <form action="/search" method="get" class="header__search-bar">
+              <input type="text" name="q" placeholder="Tìm sản phẩm...">
+              <button type="submit">Search</button>
+          </form>
+          <div class="icon_container">
+          <!-- User x Gio hang -->         
+          <a href="/dangnhap.html" class="user-icon"><img src="/image/icon_user.png" alt="User_icon" width="50px">
+             <i class="fas fa-user"></i></a> 
+          <a href="#" class="cart-icon"><img src="/image/Giohang.png" alt="Gio_hang_icon" width="50px">
+              <i class='bx bx-cart'></i></a>
+      </div>
+      </header>
+    <!-- Contact Section -->
+    <div class="container">
+      <div class="contact-info">
+        <h1>Liên hệ với chúng tôi</h1>
+        <ul>
+          <li><span>🏠</span> Công Ty Cổ Phần Dịch Vụ Chợ Au PLS</li>
+          <li>
+            <span>📍</span> 101 Hoa Lan, Phường 02, Quận Phú Nhuận, Thành phố Hồ
+            Chí Minh
+          </li>
+          <li><span>📞</span> Hotline: 08 9988 5956</li>
+          <li><span>📧</span> Email: ecommerce@polesie.vn</li>
+        </ul>
+        <div class="contact-form">
+          <h2>Gửi liên hệ</h2>
+          <form>
+            <input type="text" placeholder="Họ và tên" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Lời nhắn"></textarea>
+            <button type="submit">Gửi liên hệ</button>
+          </form>
+        </div>
+      </div>
+      <div class="map-section">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8393354531495!2d105.76744318104323!3d10.030113685779332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0883d2192b0f1%3A0x4c90a391d232ccce!2zVHLGsOG7nW5nIEPDtG5nIE5naOG7hyBUaMO0bmcgVGluIHbDoCBUcnV54buBbiBUaMO0bmcgKENUVSk!5e0!3m2!1svi!2sus!4v1741442171218!5m2!1svi!2sus"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-debug">
+      <footer class="footer container">
+        <div class="margin box1">
+          <div class="footer-left">     
+            <i class="bx bxs-map"></i>
+            <p>Công Ty Cổ Phần Đồ Chơi Trẻ em CG Store</p>
+          </div>
+          <div class="footer-left">
+            <i class="bx bxs-map"></i>
+            <p>Đường 3/2 - Ninh Kiều - Cần Thơ</p>
+          </div>
+          <div class="footer-left">
+            <i class="bx bxs-phone"></i>
+            <a href="#" class="p-hover">08 9988 5956</a>
+          </div>
+          <div class="footer-left">
+            <i class="bx bx-envelope"></i>
+            <a href="#" class="p-hover">ecommerce@polesie.vn</a>
+          </div>
+        </div>
+        <!-- Box 2 -->
+        <div class="margin box2 box">
+          <span class="footer-span">CG STORE</span>
+          <a href="#" class="footer-link">Thông tin</a>
+          <a href="#" class="footer-link">Tin tức</a>
+          <a href="#" class="footer-link"></a>
+          <a href="#" class="footer-link">Contact</a>
+          <a href="#" class="footer-link-fanpage">Fanpage</a>
+        </div>
+        <!-- Box3 -->
+        <div class="margin box3 box">
+          <span class="footer-span">CHÍNH SÁCH</span>
+          <a href="#" class="footer-link">Chính sách thanh toán</a>
+          <a href="#" class="footer-link">Chính sách giao hàng</a>
+          <a href="#" class="footer-link">Chính sách đổi - trả hàng</a>
+          <a href="#" class="footer-link">Bảo mật thông tin cá nhân</a>
+        </div>
+        <!-- Box 4 -->
+        <div class="margin box4 box">
+          <span class="footer-span">HỖ TRỢ VÀ THANH TOÁN</span>
+          <p>Hotline:</p>
+          <a href="#" class="hotline">0120 456 789</a>
+          <p>Hỗ trợ thanh toán:</p>
+          <img
+            src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/payment.png?1737512367281"
+            alt=""
+          />
+          <p>Chứng nhận:</p>
+          <div class="footer-img">
+            <img
+              src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/chungnhan_1.png?1737512367281"
+              alt=""
+            />
+            <img
+              src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/chungnhan_2.png?1737512367281"
+              alt=""
+            />
+          </div>
+        </div>
+      </footer>
+      <!-- Copy Right -->
+      <div class="copy-right">
+        <p> Cung cấp bởi CG Store
+        </p>
+      </div>
+    </div>
+    <script src="./javascrips/main.js"></script>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tin Tức</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel='stylesheet' href="/css/dn_dki.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      h1 {
+        color: #333;
+        grid-column: span 2;
+        margin-bottom: 0px;
+      }
+
+      hr {
+        border: 1px dashed #ddd;
+        height: 0px;
+        grid-column: span 2;
+        margin: 0;
+      }
+
+      .news-item {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        background-color: #fff;
+      }
+
+      .news-item img {
+        width: 100%;
+        height: auto;
+      }
+
+      .news-content {
+        padding: 20px;
+      }
+
+      .news-content h2 {
+        color: #333;
+        margin: 0 0 10px;
+      }
+
+      .news-content p {
+        margin: 5px 0;
+      }
+
+      .more-content {
+        display: none;
+      }
+
+      .show-more {
+        color: blue;
+        cursor: pointer;
+      }
+    </style>
+      <header class="header">
+        <div class="header__topbar">        
+            <div class="header__topbar__item">
+                <a href="/tintuc.html">Tin tức</a>
+            </div>
+            <div class="header__topbar__item">
+                <a href="/lienhe.html">Liên hệ</a>
+            </div>
+        </div>
+        <div class="header__mid">
+            <div class="header__logo">
+                <a href="/trangchu.html">
+                    <img src="/image/logo.png" alt="Logo cửa hàng đồ chơi">
+                </a>
+            </div>
+            <form action="/search" method="get" class="header__search-bar">
+                <input type="text" name="q" placeholder="Tìm sản phẩm...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="icon_container">
+            <!-- User x Gio hang -->         
+            <a href="/dangnhap.html" class="user-icon"><img src="/image/icon_user.png" alt="User_icon" width="50px">
+               <i class="fas fa-user"></i></a> 
+            <a href="#" class="cart-icon"><img src="/image/Giohang.png" alt="Gio_hang_icon" width="50px">
+                <i class='bx bx-cart'></i></a>
+        </div>
+        </header>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tin tức</h1>
+      <hr />
+
+      <!-- Tin tức 1 -->
+      <div class="news-item">
+        <img src="./image/khuyenmai.jpg" alt="Tin tức 1" />
+        <div class="news-content">
+          <h2>Cơ Hội Mua Sắm Tiết Kiệm Đến 50%</h2>
+          <p>01/03/2025</p>
+          <p>Vì sao không thể bỏ lỡ BIG SALE lần này? <br /></p>
+          <div class="more-content">
+            <ol>
+              <li>
+                Ưu đãi khủng đến 50% - Cơ hội vàng để sở hữu những sản phẩm yêu
+                thích với giá cực hời.
+              </li>
+              <li>
+                Đa dạng sản phẩm - Từ đồ chơi trẻ em, thời trang, đồ gia dụng
+                đến các sản phẩm công nghệ đều góp mặt trong chương trình khuyến
+                mãi.
+              </li>
+              <li>
+                Dễ dàng mua sắm - Chỉ cần vài cú click chuột hoặc ghé trực tiếp
+                cửa hàng là bạn đã có thể tận hưởng ưu đãi cực hot này.
+              </li>
+            </ol>
+          </div>
+          <span class="show-more" onclick="toggleContent(this)">Xem thêm</span>
+        </div>
+      </div>
+
+      <!-- Tin tức 2 -->
+      <div class="news-item">
+        <img src="image/member.jpg" alt="Tin tức 2" />
+        <div class="news-content">
+          <h2>Đặc Quyền Thành Viên - Ưu Đãi Chỉ Dành Riêng Cho Bạn</h2>
+          <p>03/03/2025</p>
+          <p>Đăng ký ngay hôm nay để không bỏ lỡ bất kỳ ưu đãi nào.</p>
+          <div class="more-content">
+            <ul>
+              <li>
+                Ưu đãi sinh nhật 30% - Chào đón tuổi mới với mức giảm giá cực
+                hời.
+              </li>
+              <li>
+                E-voucher 10% khi quét QR Code - Mua sắm tiện lợi với những ưu
+                đãi hấp dẫn.
+              </li>
+              <li>
+                Nhận quà khi lên hạng thành viên - Càng mua sắm nhiều, quà tặng
+                càng giá trị.
+              </li>
+              <li>
+                Tích lũy điểm lên đến 2% - Mỗi lần mua sắm là một lần tiết kiệm
+                cho những lần sau.
+              </li>
+              <li>
+                Giảm thêm 10% và nhiều ưu đãi khác - Khách hàng thân thiết luôn
+                được hưởng những ưu đãi riêng biệt.
+              </li>
+            </ul>
+          </div>
+          <span class="show-more" onclick="toggleContent(this)">Xem thêm</span>
+        </div>
+      </div>
+
+      <!-- Tin tức 3 -->
+      <div class="news-item">
+        <img src="./image/smarttoys.jpg" alt="Tin tức 3" />
+        <div class="news-content">
+          <h2>Lý do nên chọn đồ chơi trí tuệ uy tín cho bé</h2>
+          <p>08/03/2025</p>
+          <p>
+            Đồ chơi trí tuệ cho bé luôn là món mà nhiều bậc cha mẹ hay tìm cho
+            con trẻ.
+          </p>
+          <div class="more-content">
+            <p>
+              Bởi đồ chơi này sẽ giúp trí não của trẻ thông minh hơn. Việc chọn
+              đồ chơi trí tuệ uy tín giúp trẻ phát triển khả năng tư duy, sáng
+              tạo và kỹ năng giải quyết vấn đề. Những món đồ chơi này không chỉ
+              an toàn mà còn kích thích tư duy phản biện, giúp trẻ học hỏi và
+              khám phá thế giới xung quanh một cách thú vị và bổ ích.
+            </p>
+          </div>
+          <span class="show-more" onclick="toggleContent(this)">Xem thêm</span>
+        </div>
+      </div>
+
+      <!-- Tin tức 4 -->
+      <div class="news-item">
+        <img src="./image/xuhuong.jpg" alt="Tin tức 4" />
+        <div class="news-content">
+          <h2>Những xu hướng chọn đồ chơi cho bé</h2>
+          <p>10/03/2025</p>
+          <p>
+            Đồ chơi không chỉ đơn giản để giải trí mà còn như một công cụ giúp
+            trẻ phát triển trí tuệ. Tuy nhiên không phải ai cũng biết về xu
+            hướng chọn đồ chơi cho trẻ hiện nay.
+          </p>
+          <div class="more-content">
+            <ol>
+              <li>
+                Đồ chơi giáo dục đang là một trong những loại đồ chơi được các
+                bậc phu huynh quan tâm và ưa chuộng hiện nay. Không chỉ mang
+                tính chất giải trí, nó còn tác động vào sự phát triển tâm sinh
+                lý và kích thích tính tò mò học tập của trẻ về thế giới xung
+                quanh.
+              </li>
+              <li>
+                Bên cạnh đồ chơi giáo dục, đồ chơi thông minh cũng là một trong
+                những sản phẩm được ưu thích hiện nay bởi sự mới lạ và kích
+                thích tính tò mò của trẻ mà không gây nhàm chán.
+              </li>
+              <li>
+                Trên thị trường hiện nay, các loại đồ chơi trẻ em với nhiều mẫu
+                mã đa dạng chủng loại mà giá cả rất hợp lý. Tuy nhiên, các bậc
+                phụ huynh luôn muốn chọn cho con mình một loại đồ chơi có nguồn
+                gốc rõ ràng an toàn với sức khỏe của trẻ.
+              </li>
+            </ol>
+          </div>
+          <span class="show-more" onclick="toggleContent(this)">Xem thêm</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleContent(element) {
+        const moreContent = element.previousElementSibling;
+        if (
+          moreContent.style.display === "none" ||
+          moreContent.style.display === ""
+        ) {
+          moreContent.style.display = "block";
+          element.textContent = "Thu gọn";
+        } else {
+          moreContent.style.display = "none";
+          element.textContent = "Xem thêm";
+        }
+      }
+    </script>
+     <div class="footer-debug">
+      <footer class="footer container">
+        <div class="margin box1">
+          <div class="footer-left">     
+            <i class="bx bxs-map"></i>
+            <p>Công Ty Cổ Phần Đồ Chơi Trẻ em CG Store</p>
+          </div>
+          <div class="footer-left">
+            <i class="bx bxs-map"></i>
+            <p>Đường 3/2 - Ninh Kiều - Cần Thơ</p>
+          </div>
+          <div class="footer-left">
+            <i class="bx bxs-phone"></i>
+            <a href="#" class="p-hover">08 9988 5956</a>
+          </div>
+          <div class="footer-left">
+            <i class="bx bx-envelope"></i>
+            <a href="#" class="p-hover">ecommerce@polesie.vn</a>
+          </div>
+        </div>
+        <!-- Box 2 -->
+        <div class="margin box2 box">
+          <span class="footer-span">CG STORE</span>
+          <a href="#" class="footer-link">Thông tin</a>
+          <a href="#" class="footer-link">Tin tức</a>
+          <a href="#" class="footer-link"></a>
+          <a href="#" class="footer-link">Contact</a>
+          <a href="#" class="footer-link-fanpage">Fanpage</a>
+        </div>
+        <!-- Box3 -->
+        <div class="margin box3 box">
+          <span class="footer-span">CHÍNH SÁCH</span>
+          <a href="#" class="footer-link">Chính sách thanh toán</a>
+          <a href="#" class="footer-link">Chính sách giao hàng</a>
+          <a href="#" class="footer-link">Chính sách đổi - trả hàng</a>
+          <a href="#" class="footer-link">Bảo mật thông tin cá nhân</a>
+        </div>
+        <!-- Box 4 -->
+        <div class="margin box4 box">
+          <span class="footer-span">HỖ TRỢ VÀ THANH TOÁN</span>
+          <p>Hotline:</p>
+          <a href="#" class="hotline">0120 456 789</a>
+          <p>Hỗ trợ thanh toán:</p>
+          <img
+            src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/payment.png?1737512367281"
+            alt=""
+          />
+          <p>Chứng nhận:</p>
+          <div class="footer-img">
+            <img
+              src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/chungnhan_1.png?1737512367281"
+              alt=""
+            />
+            <img
+              src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/chungnhan_2.png?1737512367281"
+              alt=""
+            />
+          </div>
+        </div>
+      </footer>
+      <!-- Copy Right -->
+      <div class="copy-right">
+        <p> Cung cấp bởi CG Store
+        </p>
+      </div>
+    </div>
+    <script src="./javascrips/main.js"></script>
+  </footer>
+  </body>
+</html>

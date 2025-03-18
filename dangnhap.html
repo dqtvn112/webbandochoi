@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/dn_dki.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <title> </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__topbar">        
+          <div class="header__topbar__item">
+              <a href="/tintuc.html">Tin tức</a>
+          </div>
+          <div class="header__topbar__item">
+              <a href="/lienhe.html">Liên hệ</a>
+          </div>
+      </div>
+      <div class="header__mid">
+          <div class="header__logo">
+              <a href="/trangchu.html">
+                  <img src="/image/logo.png" alt="Logo cửa hàng đồ chơi">
+              </a>
+          </div>
+          <form action="/search" method="get" class="header__search-bar">
+              <input type="text" name="q" placeholder="Tìm sản phẩm...">
+              <button type="submit">Search</button>
+          </form>
+          <div class="icon_container">
+          <!-- User x Gio hang -->         
+          <a href="/dangnhap.html" class="user-icon"><img src="/image/icon_user.png" alt="User_icon" width="50px">
+             <i class="fas fa-user"></i></a> 
+          <a href="#" class="cart-icon"><img src="/image/Giohang.png" alt="Gio_hang_icon" width="50px">
+              <i class='bx bx-cart'></i></a>
+      </div>
+      </header>
+    <!-- Đăng nhập -->
+    <section class="dangnhap container">
+      <span>Đăng nhập tài khoản</span>
+      <div class="form-dangnhap">
+        <!-- Left -->
+        <form action="" class="left">
+          <p class="fisrt_p">Nếu bạn đã có tài khoản, đăng nhập tại đây.</p>
+          <label class="email" for="email">Email *</label> <br />
+          <input
+            type="email"
+            name="dangnhap"
+            id="dangnhap"
+            placeholder="Email"
+            required
+            class="input"
+          />
+          <br />
+          <label for="password">Mật khẩu *</label> <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Mật khẩu"
+            class="input"
+            required
+          />
+          <div class="btn">
+            <input type="submit" value="Đăng nhập" />
+            <a href="dangki.html" class="link_dangki">Đăng ký</a>
+          </div>
+          <p class="or">Hoặc đăng nhập bằng</p>
+          <div class="dangnhap-khac">
+            <img
+              src="https://bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg"
+              alt=""
+            />
+            <img
+              src="//bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg"
+              alt=""
+            />
+          </div>
+        </form>
+        <!-- Right -->
+        <form action="" class="right">
+          <p>
+            Bạn quên mật khẩu? Nhập địa chỉ email để lấy lại mật khẩu qua email.
+          </p>
+          <div class="form-right">
+            <div class="form-group">
+              <label for="email">Email <br />*</label>
+              <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                class="input"
+              />
+            </div>
+            <input class="input2" type="submit" value="Lấy lại mật khẩu" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer-debug">
+      <footer class="footer container">
+        <div class="margin box1">
+          <div class="footer-left">     
+            <i class="bx bxs-map"></i>
+            <p>Công Ty Cổ Phần Đồ Chơi Trẻ em CG Store</p>
+          </div>
+          <div class="footer-left">
+            <i class="bx bxs-map"></i>
+            <p>Đường 3/2 - Ninh Kiều - Cần Thơ</p>
+          </div>
+          <div class="footer-left">
+            <i class="bx bxs-phone"></i>
+            <a href="#" class="p-hover">08 9988 5956</a>
+          </div>
+          <div class="footer-left">
+            <i class="bx bx-envelope"></i>
+            <a href="#" class="p-hover">ecommerce@polesie.vn</a>
+          </div>
+        </div>
+        <!-- Box 2 -->
+        <div class="margin box2 box">
+          <span class="footer-span">CG STORE</span>
+          <a href="#" class="footer-link">Thông tin</a>
+          <a href="#" class="footer-link">Tin tức</a>
+          <a href="#" class="footer-link"></a>
+          <a href="#" class="footer-link">Contact</a>
+          <a href="#" class="footer-link-fanpage">Fanpage</a>
+        </div>
+        <!-- Box3 -->
+        <div class="margin box3 box">
+          <span class="footer-span">CHÍNH SÁCH</span>
+          <a href="#" class="footer-link">Chính sách thanh toán</a>
+          <a href="#" class="footer-link">Chính sách giao hàng</a>
+          <a href="#" class="footer-link">Chính sách đổi - trả hàng</a>
+          <a href="#" class="footer-link">Bảo mật thông tin cá nhân</a>
+        </div>
+        <!-- Box 4 -->
+        <div class="margin box4 box">
+          <span class="footer-span">HỖ TRỢ VÀ THANH TOÁN</span>
+          <p>Hotline:</p>
+          <a href="#" class="hotline">0120 456 789</a>
+          <p>Hỗ trợ thanh toán:</p>
+          <img
+            src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/payment.png?1737512367281"
+            alt=""
+          />
+          <p>Chứng nhận:</p>
+          <div class="footer-img">
+            <img
+              src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/chungnhan_1.png?1737512367281"
+              alt=""
+            />
+            <img
+              src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/chungnhan_2.png?1737512367281"
+              alt=""
+            />
+          </div>
+        </div>
+      <!-- Copy Right -->
+      <div class="copy-right">
+        <p> Cung cấp bởi CG Store
+        </p>
+      </div>
+    </div>
+    <script src="./javascrips/main.js"></script>
+  </footer>
+  </body>
+</html>
