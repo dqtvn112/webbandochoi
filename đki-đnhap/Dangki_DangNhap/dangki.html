@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dn_dki.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>Polesie</title>
+</head>
+<body>
+    <section class="dangki container">
+        <span>Đăng kí tài khoản</span>
+
+        <form action="" class="left dangki-form" onsubmit=SignUp()>
+            <div class="input-box-dangki">
+                <div class="dangki-left">
+                    <p class="fisrt_p">
+                        Nếu chưa có tài khoản vui lòng đăng ký tại đây
+                    </p>
+                    <label class="ho" for="ho">Họ *</label> <br />
+                    <input
+                        type="text"
+                        name="ho"
+                        id="ho"
+                        placeholder="Họ"
+                        required
+                        class="input"
+                    />
+                    <br />
+                    
+
+                    <label class="ten" for="ten">Tên *</label> <br />
+                    <input
+                        type="text"
+                        name="ten"
+                        id="ten"
+                        placeholder="Tên"
+                        required
+                        class="input"
+                    />
+                </div>
+                <div class="dangki-right">
+                    <label for="password">Mật khẩu *</label> <br />
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Mật khẩu"
+                        class="input"
+                        required
+                        autocomplete="new-password"
+                    />
+                    <br />
+                    <div class="feedback1"></div>
+                    <label for="email">Email *</label> <br />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                        class="input"
+                        required
+                        autocomplete="email"
+                    />
+                </div>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Đăng ký" />
+                <a href="dangnhap.html" class="link_dangki">Đăng nhập</a>
+            </div>
+        </form>
+
+        <p class="or">Hoặc đăng nhập bằng</p>
+        <div class="dangnhap-khac">
+            <img
+                src="https://bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg"
+                alt=""
+            />
+            <img
+                src="//bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg"
+                alt=""
+            />
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer-debug">
+      <footer class="footer container">
+        <div class="margin box1">
+          <img
+            src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/logo_footer.png?1737512367281"
+            alt=""
+          />
+          <div class="footer-left">
+            <i class="bx bxs-map"></i>
+            <p>Công Ty Cổ Phần Đồ Chơi Châu Âu PLS</p>
+          </div>
+          <div class="footer-left">
+            <i class="bx bxs-map"></i>
+            <p>101 Hoa Lan, Phường 02, Quận Phú Nhuận, Thành phố Hồ Chí Minh</p>
+          </div>
+          <div class="footer-left">
+            <i class="bx bxs-phone"></i>
+            <a href="#" class="p-hover">08 9988 5956</a>
+          </div>
+          <div class="footer-left">
+            <i class="bx bx-envelope"></i>
+            <a href="#" class="p-hover">ecommerce@polesie.vn</a>
+          </div>
+        </div>
+        <!-- Box 2 -->
+        <div class="margin box2 box">
+          <span class="footer-span">POLESIE TOYS VIỆT NAM</span>
+          <a href="#" class="footer-link">Lịch sử phát triển</a>
+          <a href="#" class="footer-link">Giấy chứng nhận</a>
+          <a href="#" class="footer-link">Tầm nhìn, sứ mệnh, giá trị cốt lõi</a>
+          <a href="#" class="footer-link">Cơ cấu tổ chức</a>
+          <a href="#" class="footer-link">Liên hệ</a>
+          <a href="#" class="footer-link-fanpage">Fanpage</a>
+        </div>
+        <!-- Box3 -->
+        <div class="margin box3 box">
+          <span class="footer-span">CHÍNH SÁCH</span>
+          <a href="#" class="footer-link">Chính sách thanh toán</a>
+          <a href="#" class="footer-link">Chính sách giao hàng</a>
+          <a href="#" class="footer-link">Chính sách đổi - trả hàng</a>
+          <a href="#" class="footer-link">Bảo mật thông tin cá nhân</a>
+        </div>
+        <!-- Box 4 -->
+        <div class="margin box4 box">
+          <span class="footer-span">HỖ TRỢ VÀ THANH TOÁN</span>
+          <p>Hotline:</p>
+          <a href="#" class="hotline">08 9988 5956</a>
+          <p>Hỗ trợ thanh toán:</p>
+          <img
+            src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/payment.png?1737512367281"
+            alt=""
+          />
+          <p>Chứng nhận:</p>
+          <div class="footer-img">
+            <img
+              src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/chungnhan_1.png?1737512367281"
+              alt=""
+            />
+            <img
+              src="//bizweb.dktcdn.net/100/285/774/themes/805346/assets/chungnhan_2.png?1737512367281"
+              alt=""
+            />
+          </div>
+        </div>
+      </footer>
+      <!-- Copy Right -->
+      <div class="copy-right">
+        <p>
+          Người đại diện: Hồ Nguyễn Duy Khương | GPKD số: 0316787626 do Sở Kế
+          Hoạch và Đầu Tư Thành Phố Hồ Chí Minh cấp ngày: 05/04/2021 | Cung cấp
+          bởi Sapo
+        </p>
+      </div>
+    </div>
+    <script src="dangki.js"></script>
+  </body>
+</html>
